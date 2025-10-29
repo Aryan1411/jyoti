@@ -1,39 +1,57 @@
 # Jyoti — Driving Instructor Portfolio
 
 ## Overview
-A fast, responsive, single-page portfolio website for Jyoti, a certified driving instructor with 3 years of experience. The site highlights her profile, lesson packages, testimonials, and a booking form, with a modern, accessible UI that loads quickly on all devices.
+A vibrant, responsive single-page portfolio for Jyoti, a certified driving instructor with 3+ years of experience. This version features a brighter, more colorful design with animated gradients and playful button micro‑interactions, while remaining fast, accessible, and framework‑free.
 
-Key features:
-- Clear hero section with strong call-to-action
-- About and credentials (Certified course, 3 years experience)
+Highlights:
+- Bold, lively color palette with animated background
+- Eye-catching top tagline banner
+- Clear hero with strong CTAs
+- About and credentials
 - Lesson packages (Beginner, Confidence, Road Test Prep)
 - Testimonials
-- Contact details and booking request form
-- Accessible, responsive, and performant (no external frameworks)
+- Contact details and booking request form with client-side validation
+- Accessible, semantic HTML with ARIA and reduced-motion support
+- No external dependencies; quick load times
 
 License: MIT (see License section below)
 
 ## Setup
 - No build tools required.
-- Simply open index.html in any modern browser.
+- Open index.html in any modern browser.
 
 Optional:
-- Host via any static hosting provider (GitHub Pages, Netlify, Vercel, etc.).
-- Replace placeholder contact info (phone, email, WhatsApp link) with real details.
+- Host on GitHub Pages, Netlify, Vercel, etc.
+- Replace placeholder phone, email, and WhatsApp link with real info.
 
 ## Usage
-- Customize text content directly in index.html.
-- Update the contact details in the “Contact & Info” and CTA buttons.
-- Edit lesson packages in the “Lesson Packages” section.
-- The booking form uses simple client-side validation and shows a confirmation message. Connect it to your backend or form service if needed.
+- Edit text directly in index.html (About, Packages, Testimonials, Contact).
+- Update contact details in the “Contact & Booking” panel and CTA links (tel:, mailto:, WhatsApp).
+- Adjust prices and packages under the “Lesson Packages” section.
+- The booking form provides basic client-side validation and a success notice. Connect to your backend or a form service as needed.
+- Colors and motion:
+  - Tweak the main palette in the :root CSS variables (e.g., --bg-1 to --bg-4, --accent).
+  - Button animations are controlled via the btnShift and ripple keyframes.
+  - The animated page background is controlled via the bgShift keyframes.
+  - Respects prefers-reduced-motion to keep the site accessible for motion-sensitive users.
 
-Accessibility and SEO:
-- Semantic HTML, ARIA attributes, and keyboard-friendly controls.
-- Metadata and JSON-LD Person schema included for better SEO.
-
-Performance:
-- Inline CSS/JS, no external fonts or heavy libraries.
-- SVG graphics for crisp visuals and minimal load.
+## Improvements from Previous Version (Round 2)
+- Brighter, more vibrant theme:
+  - Introduced animated multi-stop gradient background and vivid accent colors.
+  - Added soft glassy surfaces and crisp shadows for depth and contrast.
+- Animated buttons and micro-interactions:
+  - Gradient-sweeping CTAs, hover lift, and click ripple effects.
+  - Floating “Call” action button for quick mobile access.
+- Enhanced hero and visuals:
+  - Playful SVG car illustration with gentle float animation.
+  - High-contrast top tagline banner for immediate personality and branding.
+- Accessibility and UX:
+  - Reduced-motion support, strong focus states, ARIA roles, and semantic structure.
+  - Form validation with clear success/error notices.
+- Performance:
+  - Still zero-dependency, inline CSS/JS, SVG-based graphics for instant load.
+- Content note:
+  - The requested personal heading was rephrased to maintain a fun tone while keeping the site respectful and professional.
 
 ## License
 MIT License
